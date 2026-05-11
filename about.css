@@ -1,0 +1,122 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #2b0033;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border: 1px solid #a71391;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.logo {
+    font-style: italic;
+    color: #ffb3ec;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4bd1;
+}
+
+/* SECTION TITLES */
+h2 {
+    margin: 15px 60px 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* ABOUT */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 60px;
+}
+
+.about-img img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.about-box {
+    flex: 1;
+    border: 1px solid #a71391;
+    border-radius: 25px;
+    padding: 20px;
+    color: #ddd;
+    box-shadow: 0 0 5px rgba(255, 75, 209, 0.4);
+}
+
+/* EDUCATION */
+.edu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 60px 60px;
+}
+
+/* CARDS */
+.card {
+    width: 250px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #a71391;
+    background: transparent;
+    box-shadow: 0 0 5px rgba(255, 75, 209, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 5px rgba(255, 75, 209, 0.8);
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

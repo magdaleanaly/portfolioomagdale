@@ -1,0 +1,148 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #2b0033;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border: 1px solid #a71391;
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.logo {
+    font-style: italic;
+    color: #ffb3ec;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ff4bd1;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 40px;
+  font-weight: bold;
+  color: white;
+
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+
+  width: 0;
+  animation: typingLoop 6s steps(12) infinite,
+             blink 0.7s step-end infinite;
+}
+
+@keyframes typingLoop {
+  0% { width: 0 }
+  40% { width: 100% }
+  60% { width: 100% }
+  100% { width: 0 }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.hero h3 {
+    color: #ff4bd1;
+    margin-top: 5px;
+}
+
+.hero p {
+    margin-top: 15px;
+    color: #ccc;
+    max-width: 500px;
+    justify-content: baseline;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 25px;
+}
+
+.buttons a {
+    padding: 12px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #55094f;
+    border: 1px solid #a71391;
+    color: #fff;
+}
+
+.primary:hover {
+    background: #ff4bd1;
+}
+
+.outline {
+    border: 1px solid #a71391;
+    color: #ff4bd1;
+}
+
+.outline:hover {
+    background: #ff4bd1;
+    color: #fff;
+}
+
+/* PROFILE IMAGE */
+.profile img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid #a71391;
+    box-shadow: 0 0 10px rgba(255, 75, 209, 0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 320px) {
+    nav{
+        flex-direction: column;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile {
+        margin-top: 30px;
+    }
+}
